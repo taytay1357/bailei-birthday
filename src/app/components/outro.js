@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 
-export default function HappyBirthday({toggleForm}) {
+export default function Outro({ toggleForm }) {
   return (
     <div className="min-h-screen w-full flex flex-col items-center justify-center 
       overflow-hidden relative px-6 sm:px-10">
@@ -55,17 +55,28 @@ export default function HappyBirthday({toggleForm}) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 0.8 }}
       >
-        Here is your 2025 wrapped.
+        Have an amazing day.
       </motion.p>
 
-      {/* Button */}
-      <motion.div
-        className="mt-8 sm:mt-10 z-10"
-        initial={{ opacity: 0, y: 30 }}
+      {/* P.S. line */}
+      <motion.p
+        className="text-white text-lg sm:text-xl mt-6 text-center z-10 italic opacity-80"
+        initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1, duration: 0.8 }}
+        transition={{ delay: 1.6, duration: 0.8 }}
       >
-      </motion.div>
+        P.S. you will find me in the doghouse.
+      </motion.p>
+
+      {/* Image */}
+      <motion.img
+        src="/images/doghouse.jpg"
+        alt="Doghouse"
+        className="mt-6 w-40 sm:w-52 md:w-64 z-10"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 2.2, duration: 0.8 }}
+      />
     </div>
   );
 }

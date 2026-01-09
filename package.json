@@ -9,10 +9,13 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@snap-carousel/react": "^0.0.21",
+    "embla-carousel-react": "^8.6.0",
     "framer-motion": "^12.24.10",
     "next": "16.0.10",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "react-snap-carousel": "^0.5.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

@@ -35,7 +35,7 @@ export default function MessageForm({isFormOpen, toggleForm, notification, setNo
                 <label className="w-68 lg:w-4/6 text-2xl text-white font-['Londrina_Shadow'] border-b-2 mt-4 lg:mt-0">NAME</label>
                 <input onChange={handleChange} required name="name" type="text" placeholder="Enter your name..." className="font-bold lg:w-4/6 rounded-xl bg-white w-68 mt-3 mb-5 text-xl p-3 text-black font-['Londrina_Shadow']" />
                 <label className="lg:w-4/6 w-68 text-2xl text-white font-['Londrina_Shadow'] border-b-2">MESSAGE</label>
-                <textarea onChange={handleChange} required name="message" rows="5" cols="40" placeholder="Enter your message here..." className="font-bold lg:mb-10 lg:w-4/6 lg:h-5/6 rounded-xl font-['Londrina_Shadow'] bg-white w-68 mb-10 mt-3 text-xl p-3 text-black"></textarea>
+                <textarea onChange={handleChange} maxLength={50} required name="message" rows="5" cols="40" placeholder="Enter your message here..." className="font-bold lg:mb-10 lg:w-4/6 lg:h-5/6 rounded-xl font-['Londrina_Shadow'] bg-white w-68 mb-10 mt-3 text-xl p-3 text-black"></textarea>
                 <button
                 type="submit"
                 className="hover:cursor-pointer lg:w-3/6 lg:p-5 lg:text-3xl bg-white w-68 text-black font-['Londrina_Shadow'] px-4 py-2 rounded-xl font-bold text-xl"

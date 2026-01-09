@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Londrina+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
 @import "tailwindcss";
 
 :root {
@@ -86,4 +88,16 @@ body {
   overflow: hidden;  /* ✅ hides off-screen floaters */
   z-index: 0;
   pointer-events: none;
+}
+
+.carousel-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-card {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
 }
