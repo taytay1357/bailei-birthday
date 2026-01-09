@@ -119,7 +119,7 @@ export default function Home() {
   return (
       <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-['Open_Sans'] dark:bg-black overflow-hidden">
         <main className={`${isFormOpen ? "opacity-30 lg:opacity-10":""} flex h-screen w-full flex-col items-center justify-start px-3 bg-white dark:bg-black sm:items-start overflow-hidden`}>
-        <Countdown target="2026-01-13T11:00:00" isTimerExpired={isTimerExpired} setTimerExpired={setTimerExpired}/> 
+        <Countdown target="2026-01-09T01:02:00" isTimerExpired={isTimerExpired} setTimerExpired={setTimerExpired}/> 
           <FloatingImages />
           <div className="w-full flex justify-center mt-15 z-20 ">        
             <div onClick={toggleForm} className="hover:cursor-pointer bg-white  p-5 rounded-full w-2xs lg:w-md flex justify-center items-center flex-row">
